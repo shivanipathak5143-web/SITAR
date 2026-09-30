@@ -1,0 +1,56 @@
+# Starting configuration — values are reasonable defaults, NOT tuned.
+# Expect to adjust batch_size/image_size to your GPU memory, and epochs/lr
+# based on observed validation curves.
+
+model:
+  name: satellite_rife
+  in_channels: 1
+  out_channels: 1
+  base_channels: 64
+  num_scales: 3
+  use_external_flow_init: true   # set false to fully disable RAFT integration hook
+
+data:
+  train_dir: data/processed/train
+  val_dir: data/processed/val       # unused if val_fraction split is used instead; see note below
+  image_variable: null               # null = auto-detect common TIR variable names
+  image_size: 256
+  crop_size: 224
+  stride: 1
+  val_fraction: 0.15
+  normalization:
+    method: percentile               # "minmax" | "percentile" | "stats_file"
+    vmin: 180.0
+    vmax: 320.0
+    p_low: 1.0
+    p_high: 99.0
+    stats_path: null
+    nan_fill_strategy: valid_mean    # "valid_mean" | "constant"
+    nan_fill_constant: 0.0
+
+training:
+  epochs: 50
+  batch_size: 4
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  num_workers: 2
+  mixed_precision: true
+  optimizer: adamw
+  scheduler: cosine
+  early_stopping_patience: 10        # epochs without val improvement before stopping
+  validate_every: 1                  # epochs between validation runs
+  best_metric: ssim                  # "ssim" | "psnr" | "val_loss" (higher-is-better for ssim/psnr)
+  seed: 42
+
+loss:
+  reconstruction_weight: 1.0
+  ssim_weight: 0.2
+  gradient_weight: 0.1
+
+checkpoint:
+  directory: checkpoints
+  save_every: 5
+  best_filename: interpolation_best.pth
+  latest_filename: interpolation_latest.pth
+
+device: auto   # "auto" | "cuda" | "cpu"
