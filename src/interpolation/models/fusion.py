@@ -1,6 +1,6 @@
 from __future__ import annotations
 import torch 
-from torch.nn import nn
+import torch.nn as nn
 
 class FusionNet(nn.Module):
     def __init__(self,in_channels:int=4, c:int=6):

@@ -1,0 +1,25 @@
+# Core ML
+torch
+torchvision
+numpy
+scipy
+
+# Data handling (satellite / NetCDF)
+xarray
+netCDF4
+h5netcdf
+dask
+pandas
+
+# Config / utilities
+pyyaml
+tqdm
+matplotlib
+pillow
+opencv-python
+
+# Dashboard (remove if you don't use Streamlit)
+streamlit
+
+# Testing
+pytest
