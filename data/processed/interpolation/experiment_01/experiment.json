@@ -1,0 +1,11 @@
+{
+  "experiment": 1,
+  "frame_before": "OR_ABI-L1b-RadF-M6C13_G19_s20260500600207_e20260500609527_c20260500609586_flow_input.nc",
+  "ground_truth_frame": "OR_ABI-L1b-RadF-M6C13_G19_s20260500610207_e20260500619527_c20260500619575_flow_input.nc",
+  "frame_after": "OR_ABI-L1b-RadF-M6C13_G19_s20260500620207_e20260500629526_c20260500629577_flow_input.nc",
+  "predicted_file": "predicted_intermediate.nc",
+  "predicted_timestamp": "2026-02-19T06:15:06.718189",
+  "ground_truth_timestamp": "2026-02-19T06:15:06.731627",
+  "flow_source": "calculated with existing Farneback implementation",
+  "scientific_caveat": "Farneback optical-flow-based baseline; metric agreement does not establish physically accurate cloud motion."
+}

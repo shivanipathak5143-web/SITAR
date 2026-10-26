@@ -1,0 +1,5 @@
+{
+  "ground_truth_file": "OR_ABI-L1b-RadF-M6C13_G19_s20260500620207_e20260500629526_c20260500629577_flow_input.nc",
+  "ground_truth_timestamp": "2026-02-19T06:25:06.705026",
+  "role": "Held-out reference; not used to generate the prediction."
+}

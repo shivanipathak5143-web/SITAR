@@ -1,0 +1,26 @@
+{
+  "frame1": "OR_ABI-L1b-RadF-M6C13_G19_s20260500600207_e20260500609527_c20260500609586_flow_input.nc",
+  "frame2": "OR_ABI-L1b-RadF-M6C13_G19_s20260500610207_e20260500619527_c20260500619575_flow_input.nc",
+  "flow_file": "flow_frame1_to_frame2.nc",
+  "evaluation_pixel_count": 809063,
+  "evaluation_percentage": 77.15826034545898,
+  "original_mse": 0.0006213537302330921,
+  "warped_mse": 0.00027702471710415027,
+  "original_mae": 0.012875969121967142,
+  "warped_mae": 0.00963792150230366,
+  "original_psnr": 32.06661090077851,
+  "warped_psnr": 35.5748147994984,
+  "original_ssim": 0.9360676407814026,
+  "warped_ssim": 0.9659113883972168,
+  "time_difference_seconds": 600.000276,
+  "time_difference_minutes": 10.0000046,
+  "flow_warp_convention": "Forward displacement: target=(source_x+dx, source_y+dy); inverted for cv2.remap destination-to-source coordinates.",
+  "ssim_evaluation_note": "Evaluation mask eroded by 3 pixels so each 7x7 SSIM window contains evaluated pixels.",
+  "metric_improved": {
+    "mse": true,
+    "mae": true,
+    "psnr": true,
+    "ssim": true
+  },
+  "scientific_caveat": "Improved image metrics do not prove physically correct cloud motion; cloud evolution, parallax, illumination, and atmospheric effects remain."
+}

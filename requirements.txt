@@ -1,0 +1,14 @@
+numpy
+pandas 
+matplotlib
+streamlit
+scikit-learn
+opencv-python
+pillow
+scikit-image
+satpy
+pyresample
+boto3
+netcdf4
+h5netcdf
+xarray

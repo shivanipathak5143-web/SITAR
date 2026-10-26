@@ -1,0 +1,61 @@
+{
+  "experiments_planned": 4,
+  "succeeded": [
+    {
+      "experiment": 1,
+      "before": "OR_ABI-L1b-RadF-M6C13_G19_s20260500600207_e20260500609527_c20260500609586_flow_input.nc",
+      "target": "OR_ABI-L1b-RadF-M6C13_G19_s20260500610207_e20260500619527_c20260500619575_flow_input.nc",
+      "after": "OR_ABI-L1b-RadF-M6C13_G19_s20260500620207_e20260500629526_c20260500629577_flow_input.nc",
+      "mse": 0.0001316160452095137,
+      "mae": 0.006552275407299092,
+      "psnr": 38.806911629927114,
+      "ssim": 0.9808006882667542,
+      "directory": "C:\\Users\\pawar\\OneDrive\\Desktop\\SITAR\\data\\processed\\interpolation\\experiment_01",
+      "evaluation_pixels": 821246
+    },
+    {
+      "experiment": 2,
+      "before": "OR_ABI-L1b-RadF-M6C13_G19_s20260500610207_e20260500619527_c20260500619575_flow_input.nc",
+      "target": "OR_ABI-L1b-RadF-M6C13_G19_s20260500620207_e20260500629526_c20260500629577_flow_input.nc",
+      "after": "OR_ABI-L1b-RadF-M6C13_G19_s20260500630207_e20260500639527_c20260500639583_flow_input.nc",
+      "mse": 0.00013147154967934984,
+      "mae": 0.006631305914632437,
+      "psnr": 38.811682179275614,
+      "ssim": 0.9811106324195862,
+      "directory": "C:\\Users\\pawar\\OneDrive\\Desktop\\SITAR\\data\\processed\\interpolation\\experiment_02",
+      "evaluation_pixels": 821253
+    },
+    {
+      "experiment": 3,
+      "before": "OR_ABI-L1b-RadF-M6C13_G19_s20260500620207_e20260500629526_c20260500629577_flow_input.nc",
+      "target": "OR_ABI-L1b-RadF-M6C13_G19_s20260500630207_e20260500639527_c20260500639583_flow_input.nc",
+      "after": "OR_ABI-L1b-RadF-M6C13_G19_s20260500640207_e20260500649527_c20260500649587_flow_input.nc",
+      "mse": 0.00012545494442884968,
+      "mae": 0.006144193205741447,
+      "psnr": 39.01512217602861,
+      "ssim": 0.9813560843467712,
+      "directory": "C:\\Users\\pawar\\OneDrive\\Desktop\\SITAR\\data\\processed\\interpolation\\experiment_03",
+      "evaluation_pixels": 821266
+    },
+    {
+      "experiment": 4,
+      "before": "OR_ABI-L1b-RadF-M6C13_G19_s20260500630207_e20260500639527_c20260500639583_flow_input.nc",
+      "target": "OR_ABI-L1b-RadF-M6C13_G19_s20260500640207_e20260500649527_c20260500649587_flow_input.nc",
+      "after": "OR_ABI-L1b-RadF-M6C13_G19_s20260500650207_e20260500659527_c20260500659580_flow_input.nc",
+      "mse": 0.00013656474262213844,
+      "mae": 0.006715025643169299,
+      "psnr": 38.646614094470756,
+      "ssim": 0.9808093309402466,
+      "directory": "C:\\Users\\pawar\\OneDrive\\Desktop\\SITAR\\data\\processed\\interpolation\\experiment_04",
+      "evaluation_pixels": 821264
+    }
+  ],
+  "failed": [],
+  "average_metrics": {
+    "mse": 0.00013127682048496292,
+    "mae": 0.006510700042710569,
+    "psnr": 38.82008251992553,
+    "ssim": 0.9810191839933395
+  },
+  "scientific_caveat": "Farneback baseline metrics do not prove physically correct cloud motion."
+}

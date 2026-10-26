@@ -1,0 +1,25 @@
+{
+  "predicted_file": "predicted_intermediate.nc",
+  "ground_truth_file": "OR_ABI-L1b-RadF-M6C13_G19_s20260500610207_e20260500619527_c20260500619575_flow_input.nc",
+  "ground_truth_timestamp": "2026-02-19T06:15:06.731627",
+  "shape": [
+    1024,
+    1024
+  ],
+  "total_pixels": 1048576,
+  "comparison_pixel_count": 821246,
+  "comparison_percentage_of_image": 78.32012176513672,
+  "metrics": {
+    "mse": 0.0001316160452095137,
+    "mae": 0.006552275407299092,
+    "psnr": 38.806911629927114,
+    "ssim": 0.9808006882667542
+  },
+  "plots": {
+    "predicted_image": "predicted_0615.png",
+    "ground_truth_image": "ground_truth_0615.png",
+    "difference_image": "difference_0615.png",
+    "comparison_image": "comparison_0615.png"
+  },
+  "scientific_caveat": "These image metrics assess agreement with this held-out frame; they do not establish physically accurate cloud motion."
+}

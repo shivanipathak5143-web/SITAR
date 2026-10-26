@@ -1,0 +1,44 @@
+{
+  "number_of_experiments": 4,
+  "successful_experiments": 4,
+  "failed_or_missing_experiments": 0,
+  "failed_or_missing_details": [],
+  "metrics": {
+    "mse": {
+      "average": 0.00013127682048496292,
+      "standard_deviation": 3.937300922410831e-06,
+      "minimum": 0.00012545494442884968,
+      "maximum": 0.00013656474262213844
+    },
+    "mae": {
+      "average": 0.006510700042710569,
+      "standard_deviation": 0.0002192889075116624,
+      "minimum": 0.006144193205741447,
+      "maximum": 0.006715025643169299
+    },
+    "psnr": {
+      "average": 38.82008251992553,
+      "standard_deviation": 0.13074383364900227,
+      "minimum": 38.646614094470756,
+      "maximum": 39.01512217602861
+    },
+    "ssim": {
+      "average": 0.9810191839933395,
+      "standard_deviation": 0.0002311078477864313,
+      "minimum": 0.9808006882667542,
+      "maximum": 0.9813560843467712
+    }
+  },
+  "average_mse": 0.00013127682048496292,
+  "average_mae": 0.006510700042710569,
+  "average_psnr": 38.82008251992553,
+  "average_ssim": 0.9810191839933395,
+  "standard_deviation_mse": 3.937300922410831e-06,
+  "standard_deviation_mae": 0.0002192889075116624,
+  "standard_deviation_psnr": 0.13074383364900227,
+  "standard_deviation_ssim": 0.0002311078477864313,
+  "average_comparison_percentage": 78.32119464874268,
+  "average_method": "simple arithmetic mean across successful experiments; no weighted average",
+  "scope": "Farneback baseline performance across four held-out intermediate frames from the current GOES-19 C13 sequence.",
+  "scientific_note": "These metrics evaluate agreement between the predicted intermediate frame and the held-out observed frame. They do not by themselves establish physically accurate cloud-motion estimation."
+}

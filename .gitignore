@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large generated satellite data files
+data/processed/*_BT.nc
+data/processed/*_BT_prepared.nc
