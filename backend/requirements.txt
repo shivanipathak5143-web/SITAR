@@ -23,3 +23,9 @@ streamlit
 
 # Testing
 pytest
+
+scikit-learn
+scikit-image
+satpy
+pyresample
+boto3
